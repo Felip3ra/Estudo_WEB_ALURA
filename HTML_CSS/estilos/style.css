@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+
+:root{
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #3F4E4F;
+    --cor-terciaria: #A27B5C;
+    --cor-hover: #DCD7C9;
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    box-sizing: border-box;
+    
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    
+}
+.conteudo-strong{
+    color: var(--cor-terciaria);
+}
+.conteudo-principal{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
+.conteudo-titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-principal)
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    padding: 8% 15%;
+    justify-content: space-between;
+    gap: 82px;
+    
+}
+.apresentacao-conteudo{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.link{
+    width: 50%;
+    text-decoration: none;
+    border: var(--cor-terciaria) 2px solid;
+    color: #f6f6f6;
+    text-align: center;
+    padding: 22px 0;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.conteudo-links{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.links_subtitulo{
+    font-size: 1.5rem;
+    font-family: var(--font-principal);
+    font-weight: 400;
+}
+
+.link:hover{
+    background-color: var(--cor-hover);
+}
+.rodape{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 24px;
+}
+.menu-link{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.menu{
+    display: flex;
+    gap: 80px;
+}
+.conteudo-imagem{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    .conteudo{
+        flex-direction: column-reverse;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .menu{
+        justify-content: center;
+    }
+}
